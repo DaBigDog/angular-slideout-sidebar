@@ -1,0 +1,12 @@
+﻿
+<div class="container sidebar" [ngClass]="[sidebarPositionClass, sidebarStateClass]">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg1-12">
+            <menu class="sidebar-component"></menu>
+        </div>
+    </div>
+    <div class="toggler" (click)="toggleSidebar()">
+        <span class="glyphicon glyphicon-chevron-right" [style.display]="(('in'===sidebarState && 'left' === sidebarPosition) || ('out'===sidebarState && 'right' === sidebarPosition)) ? 'block' : 'none'">&nbsp;</span>
+        <span class="glyphicon glyphicon-chevron-left" [style.display]="(('out'===sidebarState && 'left' === sidebarPosition) || ('in'===sidebarState && 'right' === sidebarPosition)) ? 'block' : 'none'">&nbsp;</span>
+    </div>
+</div>

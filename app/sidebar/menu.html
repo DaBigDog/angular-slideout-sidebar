@@ -1,0 +1,21 @@
+<div class="panel panel-primary">
+    <div class="panel-heading" style="text-align: center;">
+        <h3 class="panel-title">Links Menu</h3>
+    </div>
+    <div class="panel-body sidebar-list-pad">
+        <div class="list-group" *ngIf="undefined !== menuItems && 0 < menuItems.length">
+            <div class="list-group-item menu-view-pad" *ngFor="let menuItem of menuItems">
+                <a [href]="menuItem.url" (click)="triggerChange(menuItem)" class="close-sidebar">{{ menuItem.text }}</a>
+            </div>
+        </div>
+        <div class="list-group" *ngIf="!(undefined !== menuItems && 0 < menuItems.length)">
+            <div class="list-group-item">
+                No Links Found
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
