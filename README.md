@@ -1,4 +1,4 @@
-# Angular 4 Multiselect Dropdown
+# Angular 4 Slideout Sidebar
 
 
 ```bash
