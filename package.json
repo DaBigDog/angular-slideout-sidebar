@@ -1,7 +1,7 @@
 {
-  "name": "angular-4-multiselect-dropdown",
+  "name": "angular-4-slideout-sidebar",
   "version": "1.0.0",
-  "description": "Angular 4 Multiselect Dropdown",
+  "description": "Angular 4 Slideout Sidebar",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "lint": "tslint ./app/**/*.ts -t verbose",

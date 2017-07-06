@@ -17,7 +17,7 @@ var SidebarComponent = (function () {
         this.elementRef = thisElement;
     }
     SidebarComponent.prototype.ngOnChanges = function (changes) {
-        var location = changes.location;
+        var location = changes["location"];
         this.sidebarPosition = location.currentValue;
     };
     /** Sidebar event handlers **/

@@ -1,4 +1,4 @@
-﻿import { Component, Input, ElementRef } from '@angular/core';
+﻿import { Component, Input, ElementRef, SimpleChanges, SimpleChange } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 
 
@@ -21,7 +21,7 @@ export class SidebarComponent {
     }
 
     ngOnChanges(changes: SimpleChanges) {
-        let location: SimpleChange = changes.location;
+        let location: SimpleChange = changes["location"];
         this.sidebarPosition = location.currentValue;
     }
 
